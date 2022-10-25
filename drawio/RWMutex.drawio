@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-10-25T10:05:22.663Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52" etag="zk91K4HZuv76d867C8BH" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-25T10:05:53.418Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.52" etag="Claq0v-V1hYOM6F9uxPg" version="20.5.1" type="github">
   <diagram id="TceX393t4UuMsp8WdUJ8" name="第 1 页">
     <mxGraphModel dx="1422" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="D6XNFb5UC1GtJaUE1ZK0-5" value="RWMutex&amp;nbsp;原理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
-          <mxGeometry x="700" y="90" width="160" height="40" as="geometry" />
+          <mxGeometry x="700" y="104" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="D6XNFb5UC1GtJaUE1ZK0-6" value="&lt;div&gt;type RWMutex struct {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; w Mutex // 互斥锁解决多个writer的竞争&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; writerSem uint32 // writer信号量&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; readerSem uint32 // reader信号量&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; readerCount int32 // reader的数量&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; readerWait int32 // writer等待完成的reader的数量&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;const rwmutexMaxReaders = 1 &amp;lt;&amp;lt; 30&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;sketch=1;hachureGap=4;jiggle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
           <mxGeometry x="560" y="170" width="530" height="210" as="geometry" />
